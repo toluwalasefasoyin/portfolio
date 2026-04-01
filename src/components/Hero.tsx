@@ -136,33 +136,99 @@ const Hero = () => {
           with Java, Spring Boot, and React. I ship real things — not just course projects.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '1rem' }}>
-          <a
-            href="#projects"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.6rem',
-              background: '#0d9488',
-              color: '#fff',
-              padding: '0.9rem 2rem',
-              borderRadius: '100px',
-              textDecoration: 'none',
-              fontSize: '0.9rem',
-              fontWeight: 500,
-              transition: 'background 0.2s, transform 0.2s',
-              fontFamily: "'DM Sans', sans-serif",
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.background = '#0f766e';
-              e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.background = '#0d9488';
-              e.currentTarget.style.transform = 'translateY(0)';
-            }}
-          >
-            View my work ↗
-          </a>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+            <a
+              href="#projects"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                background: '#0d9488',
+                color: '#fff',
+                padding: '0.9rem 2rem',
+                borderRadius: '100px',
+                textDecoration: 'none',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                transition: 'background 0.2s, transform 0.2s',
+                fontFamily: "'DM Sans', sans-serif",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#0f766e';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = '#0d9488';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              View my work ↗
+            </a>
+            <a
+              href="https://github.com/toluwalasefasoyin"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                background: 'rgba(13,148,136,0.12)',
+                color: '#0d9488',
+                padding: '0.9rem 2rem',
+                borderRadius: '100px',
+                textDecoration: 'none',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                transition: 'background 0.2s, transform 0.2s, color 0.2s',
+                fontFamily: "'DM Sans', sans-serif",
+                border: '1px solid #0d9488',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#0d9488';
+                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'rgba(13,148,136,0.12)';
+                e.currentTarget.style.color = '#0d9488';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              GitHub ↗
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                background: 'rgba(13,148,136,0.12)',
+                color: '#0d9488',
+                padding: '0.9rem 2rem',
+                borderRadius: '100px',
+                textDecoration: 'none',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                transition: 'background 0.2s, transform 0.2s, color 0.2s',
+                fontFamily: "'DM Sans', sans-serif",
+                border: '1px solid #0d9488',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#0d9488';
+                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'rgba(13,148,136,0.12)';
+                e.currentTarget.style.color = '#0d9488';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              Resume ↗
+            </a>
+          </div>
         </div>
       </div>
     </section>

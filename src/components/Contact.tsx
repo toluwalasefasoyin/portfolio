@@ -16,6 +16,11 @@ const contacts = [
     value: 'github.com/toluwalasefasoyin',
     href: 'https://github.com/toluwalasefasoyin',
   },
+  {
+    label: 'Resume',
+    value: 'Download CV',
+    href: '/resume.pdf',
+  },
 ];
 
 const Contact = () => {
