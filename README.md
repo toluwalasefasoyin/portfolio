@@ -1,53 +1,103 @@
-# React + TypeScript + Vite
+# Tolu Fasoyin — Software Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, professional portfolio website showcasing my journey as a Software Engineering student and aspiring full-stack developer. Built with React, TypeScript, and Vite for a fast, responsive, and visually compelling user experience.
 
-Currently, two official plugins are available:
+## 🎯 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio highlights my expertise in building full-stack applications using Java, Spring Boot, React, and modern web technologies. It features my professional projects, technical skills, and provides a direct line to connect with me for internship and collaboration opportunities.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX**: Clean, sophisticated interface with smooth animations and transitions
+- **Project Showcase**: Detailed presentation of key projects with links to live demos and GitHub repositories
+- **Skills Directory**: Organized categorization of technical expertise across languages, frameworks, tools, and concepts
+- **Resume Integration**: Easy access to download or view my complete resume
+- **Contact Section**: Multiple contact channels including email, LinkedIn, and GitHub
+- **Performance Optimized**: Built with Vite for lightning-fast load times and development experience
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **Build Tool**: Vite 8.0.3
+- **Routing**: React Router DOM
+- **Animations**: Framer Motion (ready for implementation)
+- **Typography**: Google Fonts (Syne, DM Sans)
+- **Deployment**: GitHub, Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
+- Node.js 18.0 or higher
+- npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/toluwalasefasoyin/portfolio.git
+cd portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173/`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The optimized build will be generated in the `dist/` directory.
+
+## 📁 Project Structure
+
+```
+src/
+  ├── components/      # Reusable React components
+  │   ├── Navbar.tsx   # Navigation header
+  │   ├── Hero.tsx     # Hero section with CTA buttons
+  │   ├── About.tsx    # About me section with stats
+  │   ├── Projects.tsx # Project showcase grid
+  │   ├── Skills.tsx   # Technical skills categorized
+  │   └── Contact.tsx  # Contact information
+  ├── data/            # Static data and content
+  │   └── index.ts     # Projects and skills data
+  ├── App.tsx          # Main application component
+  └── main.tsx         # React entry point
+```
+
+## 🎨 Design Features
+
+- **Color Scheme**: Midnight Blue (#0f172a) with Teal (#0d9488) accents
+- **Animations**: Fade-up effects on scroll, parallax mouse-follow interactions
+- **Typography**: Professional font pairing optimized for readability
+- **Accessibility**: Semantic HTML and keyboard navigation support
+
+## 📞 Connect With Me
+
+- **Email**: [toluwalasefasoyin13@gmail.com](mailto:toluwalasefasoyin13@gmail.com)
+- **LinkedIn**: [linkedin.com/in/toluwalasefasoyin](https://linkedin.com/in/toluwalasefasoyin)
+- **GitHub**: [github.com/toluwalasefasoyin](https://github.com/toluwalasefasoyin)
+- **Resume**: Available on the portfolio website
+
+## 🌍 Live Demo
+
+Visit my portfolio at: [portfolio.vercel.app](https://portfolio.vercel.app)
+
+## 📝 License
+
+This project is open source and available under the MIT License.
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([
