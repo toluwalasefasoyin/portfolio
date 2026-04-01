@@ -93,7 +93,7 @@ src/
 
 ## 🌍 Live Demo
 
-Visit my portfolio at: [portfolio.vercel.app](https://portfolio.vercel.app)
+Visit my portfolio at: [https://portfolio-wine-nine-72.vercel.app/](https://portfolio-wine-nine-72.vercel.app/)
 
 ## 📝 License
 
